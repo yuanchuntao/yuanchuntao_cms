@@ -1,22 +1,36 @@
 package yuanchuntao_cms.pojo;
 
 import java.util.Date;
-
+//-----------用户表
 public class User {
 
+	/**  **/
 	private Integer id;
-	private	String username;
-	private	String headimg;
-	private	String password;
-	private	String nickname;
-	private	Date birthday;
+	/** 登录名称 **/
+	private String username;
+	/** 用户头像 **/
+	private String headimg;
+	/** 登录密码 **/
+	private String password;
+	/** 昵称 **/
+	private String nickname;
+	/** 生日 **/
+	private Date birthday;
+	/** 性别，1：男；2：女 **/
 	private Integer gender;
-	private	Integer locked;
+	/** 0:正常,1:禁用 **/
+	private Integer locked;
+	/** 积分 **/
 	private Integer score;
-	private	String role;
-	private	String url;
+	/** 0:普通用户,1:管理员 **/
+	private String role;
+	/** 个人博客网址 **/
+	private String url;
+	/** 创建时间 **/
 	private String create_time;
+	/** 修改时间 **/
 	private String update_time;
+
 	public Integer getId() {
 		return id;
 	}
